@@ -1,0 +1,17 @@
+[package]
+name = "setrise"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lewin Probst <info@emirror.de>"]
+description = "Small, infinitely running, application to adjust your colorschemes based on a configured daytime."
+
+[dependencies]
+toml = "0.5.9"
+serde = { version = "*", features = ["derive"]}
+chrono = { version = "0.4.19", features = ["serde"]}
+clokwerk = "0.3"
+simple_logger = "2"
+log = "0.4"
+clap = { version = "3", features = ["derive"]}
+dirs = "4"
+shellexpand = "2"

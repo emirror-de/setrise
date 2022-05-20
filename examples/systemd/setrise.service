@@ -1,0 +1,10 @@
+[Unit]
+Description=Setrise, colorscheme switcher.
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/YOUR_HOME/.cargo/bin/setrise
+
+[Install]
+WantedBy=sway-session.target

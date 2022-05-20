@@ -1,0 +1,24 @@
+[generic]
+event_loop_seconds = 360
+default_theme = "Light"
+
+[schedule]
+light = "08:00:00"
+dark = "20:00:00"
+
+[[hot_reload]]
+name = "alacritty"
+target = "~/.config/alacritty/colors/current"
+dark = "~/.config/alacritty/colors/papercolor_dark.yaml"
+light = "~/.config/alacritty/colors/papercolor_light.yaml"
+
+[[hot_reload]]
+name = "nvim"
+target = "~/.config/nvim/colorscheme/current"
+dark = "~/.config/nvim/colorscheme/colorscheme.dark"
+light = "~/.config/nvim/colorscheme/colorscheme.light"
+
+[[command]]
+name = "GTK"
+light = "gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'"
+dark = "gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'"
